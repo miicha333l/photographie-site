@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Photographie</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+	<header>
+		<nav id="nav" class="nav">
+			<h1>Fotogua</h1>
+			<ul>
+				<li><i class="far fa-arrow-alt-circle-right"></i> Contact</li>
+				<li><i class="far fa-arrow-alt-circle-right"></i> Valeurs</li>
+				<li id="label" onclick="showNav()"><i class="fas fa-bars"></i></li>
+			</ul>
+		</nav>
+
+		<h1>
+			Sauvegardez votre vie,<br />
+			et vos moments préférés en photos
+		</h1>
+		<button>
+			<i class="fas fa-arrow-alt-circle-down"></i> Scrollez pour en savoir
+			plus
+		</button>
+
+		<section class="small-cards">
+			<div class="small-card" id="sc1">
+				<h4>Architecture</h4>
+				<p>Services de photos</p>
+			</div>
+			<div class="small-card" id="sc2">
+				<h4>Entreprise</h4>
+				<p>Photos d'évènements</p>
+			</div>
+			<div class="small-card" id="sc3">
+				<h4>Restaurants</h4>
+				<p>Photos de nourritures</p>
+			</div>
+			<div class="small-card" id="sc4">
+				<h4>Personnels</h4>
+				<p>Mariage, anniversaires</p>
+			</div>
+		</section>
+	</header>
+
+	<section class="content">
+		<section class="testimonials">
+			<div class="testimonial">
+				<i class="fas fa-quote-left"></i>
+				<h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+					omnis minus doloribus voluptates veniam.
+				</h2>
+				<p class="author">Patrick Lebogos</p>
+				<small>par le PDG de UdL</small>
+			</div>
+		</section>
+
+		<section class="presentation-cards">
+			<div class="presentation-card">
+				<img src="images/5.jpg" alt="professionnel" />
+				<div class="card-content">
+					<h3>Tout professionnel</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+						saepe debitis ipsum dolor sit amet consectetur adipisicing elit.
+						Autem, voluptas optio! Obcaecati, sunt consequuntur ipsa fugit
+						perspiciatis porro ut voluptatibus impedit sapiente hic aliquam.
+					</p>
+				</div>
+			</div>
+			<div class="presentation-card">
+				<img src="images/6.jpg" alt="perfection" />
+				<div class="card-content">
+					<h3>Tout à la perfection</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+						saepe debitis ipsum dolor sit amet consectetur adipisicing elit.
+						Autem, voluptas optio! Obcaecati, sunt consequuntur ipsa fugit
+						perspiciatis porro ut voluptatibus impedit sapiente hic aliquam
+						voluptatem totam. Qui maxime possimus veritatis.
+					</p>
+				</div>
+			</div>
+			<div class="presentation-card">
+				<img src="images/7.jpg" alt="gratuit" />
+				<div class="card-content">
+					<h3>Tout presque gratuit</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+						saepe debitis ipsum dolor sit amet consectetur adipisicing elit.
+						Autem, voluptas optio! Obcaecati
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="values-presentation">
+			<h1>Nous sommes fiers de nos valeurs</h1>
+			<div class="values">
+				<h1>#Qualité</h1>
+				<h1>#Moderne</h1>
+				<h1>#Simple</h1>
+				<h1>#Artistique</h1>
+				<h1>#Force</h1>
+				<h1>#Créativité</h1>
+				<h1>#Réalisme</h1>
+				<h1>#Discrétion</h1>
+				<h1>#Perfectionnisme</h1>
+				<h1>#EtBienD'Autres</h1>
+			</div>
+		</section>
+	</section>
+
+	<footer>
+		<div class="column">
+			<h3>Évènements</h3>
+			<p>Festival de la photo</p>
+			<p>Ouverture à Nantes</p>
+			<p>Paris 2023</p>
+		</div>
+		<div class="column">
+			<h3>Recrutement</h3>
+			<p>Faire un stage</p>
+			<p>Alternance</p>
+			<p>Postuler CDD</p>
+			<p>Postuler CDI</p>
+		</div>
+		<div class="column">
+			<h3>Entreprise</h3>
+			<p>Chiffre d'affaires</p>
+			<p>Mentions légales</p>
+			<p>Société annexe</p>
+		</div>
+		<div class="column">
+			<h3>Réseaux</h3>
+			<p>Instagram</p>
+			<p>Facebook</p>
+			<p>Linkedin</p>
+		</div>
+	</footer>
+
+	<script>
+		function showNav() {
+			var x = document.getElementById('nav');
+			if (x.className === 'nav') {
+				x.className += ' show';
+			} else {
+				x.className = 'nav';
+			}
+		}
+	</script>
+</body>
+
+</html>
